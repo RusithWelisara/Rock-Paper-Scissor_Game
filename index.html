@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Rock Paper Scissors</h1>
+
+    <div class="scoreboard">
+      <p class="won-count">Won: <span id="won-count">0</span></p>
+      <p class="lost-count">Lost: <span id="lost-count">0</span></p>
+      <p class="draw-count">Draw: <span id="draw-count">0</span></p>
+    </div>
+
+    <div class="score">
+      <p id="player">🙍‍♂️: <span id="player-score">0</span></p>
+      <p id="com">🤖: <span id="computer-score">0</span></p>
+    </div>
+
+    <div class="choices">
+      <button onclick="play('rock')"><img src="./images/rock.png" alt="Rock"></button>
+      <button onclick="play('paper')"><img src="./images/paper.png" alt="Paper"></button>
+      <button onclick="play('scissor')"><img src="./images/scissor.png" alt="Scissors"></button>
+    </div>
+
+    <div class="result">
+      <p id="result-message">Select your weapon!</p>
+    </div>
+
+    <div class="game-over" id="game-over">
+      <p id="final-result"></p>
+      <button onclick="resetGame()">Play Again</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
